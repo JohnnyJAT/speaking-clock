@@ -114,9 +114,9 @@ public class SpeakingClockServiceImpl implements ISpeakingClockService {
         if (minutes < 10){
             minutesInWords = "o' " + ONES.get(minutes);
         } else if (minutes < 20) {
-            minutesInWords = "o' " + TEENS.get(minutes % 10);
+            minutesInWords = TEENS.get(minutes % 10);
         } else {
-            minutesInWords = "o' " + TENS.get(minutes / 10) + " " + ONES.get(minutes % 10);
+            minutesInWords = TENS.get(minutes / 10) + " " + ONES.get(minutes % 10);
         }
 
         String meridianOfTheDay = hour < 12 ? "AM" : "PM";
