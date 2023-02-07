@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "c96b9e34-78bd-4423-a043-3660c8bb9802",
+		"name": "wisdomleaf assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "speaking clock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputTimeInHoursMinutes\" : \"12:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/wisdomleaf/speakingclock",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wisdomleaf",
+						"speakingclock"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
